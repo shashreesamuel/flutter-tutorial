@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
       ),
 
       
-      /* Understanding rows with expanded widgets*/
+      /* Understanding rows */
 
 
       // Row(
@@ -62,7 +62,12 @@ class Home extends StatelessWidget {
       //       child: Text('3')
       //     ),
       //   ],
-      // ), 
+      // ),
+
+
+      /* Understanding rows using expanded widgets */
+
+
       // Row(
       //   children: [
       //     Expanded(

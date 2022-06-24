@@ -13,23 +13,94 @@ class Home extends StatelessWidget {
       appBar: AppBar(
           title: const Text('Flutter Tutorial'),
           centerTitle: true,
-          backgroundColor: Colors.red[600]
+          backgroundColor: Colors.red[600],
       ),
      
 
-     /* Understanding rows */
+     /* Understanding columns */
 
 
-      body: Row(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
-            'Test',
+          Container(
+            color: Colors.red,
+            child: Text('This is something pretty cool'),
           ),
-          Text('1')
+          Container(
+            color: Colors.green,
+            child: Text('This is something pretty cool'),
+          ),
+          Container(
+            color: Colors.blue,
+            child: Text('This is something pretty cool'),
+          )
         ],
       ),
+
+      
+      /* Understanding rows with expanded widgets*/
+
+
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   children: [
+      //     Container(
+      //       padding: EdgeInsets.all(30),
+      //       color: Colors.cyan,
+      //       child: Text('1')
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30),
+      //       color: Colors.red,
+      //       child: Text('2')
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30),
+      //       color: Colors.green,
+      //       child: Text('3')
+      //     ),
+      //   ],
+      // ), 
+      // Row(
+      //   children: [
+      //     Expanded(
+      //       flex: 3,
+      //       child:Container(
+      //         padding: EdgeInsets.all(30),
+      //         color: Colors.cyan,
+      //         child: Text('1')
+      //       ),
+      //     ),
+      //     Expanded(
+      //       flex: 2,
+      //       child: Container(
+      //         padding: EdgeInsets.all(30),
+      //         color: Colors.pinkAccent,
+      //         child: Text('2')
+      //       ),
+      //     ),  
+      //     Expanded(
+      //       flex: 1,
+      //       child: Container(
+      //         padding: EdgeInsets.all(30),
+      //         color: Colors.amber,
+      //         child: Text('3')
+      //       ),
+      //     ),          
+        // ],
+      // ),
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.center,
+      //   crossAxisAlignment: CrossAxisAlignment.center,
+      //   children: [
+      //     Text(
+      //       'Test',
+      //     ),
+      //     Text('1')
+      //   ],
+      // ),
       
 
       /* Containers and Padding */
